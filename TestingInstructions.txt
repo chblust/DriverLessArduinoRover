@@ -1,0 +1,24 @@
+﻿Testing Instructions for Arduino 101 Powered Rover
+
+
+Continuous Collision Avoidance Mode:
+1. Place the rover in a fairly open area (such as a playground, backyard, gymnasium, etc), with at least 2 meters of space in between the front of the vehicle and the nearest obstacle
+2. Supply power to the Arduino by plugging in the cable attached to the power supply, and turn on the Electronic Speed Control
+3. Wait 5-15 seconds
+4. Open iPad Rover Controller Application
+5. Wait for on/off switch to appear in center of iPad screen
+6. Turn switch on to start the back motor of the rover and enable collision avoidance
+
+
+Vehicle to Vehicle Communication Intersection Demonstration:
+1. Place the driverless arduino rover and the RC raspberry pi rover about 9 meters apart (try closer if the vehicles are failing to connect, the raspberry pi 3 has a relatively small bluetooth range)
+2. Orient the two vehicles such that they are pointing towards a common point, from directions around 90 degrees relative to each other
+3. Plug the raspberry pi and the arduino, turning the two devices on, and turn on the Electronic Speed Control on the arduino rover
+4. Wait until both GPSs indicate a fix (when the blinking red light on the GPS starts blinking much less frequently)
+5. SSH into the raspberry pi and start the intersection demo python program
+6. Once the arduino rover starts moving, using the Remote Control, drive the raspberry pi rover into the path of the arduino rover, so that they are on a collision path and moving in directions around 90 degrees relative to each other
+7. Do not stop raspberry pi rover; drive it straight through the intersection
+8. The arduino rover should now stop and let the raspberry pi rover pass
+
+
+**Note: for both the sketches, the pulse length that determines the speed of the arduino rover is defined by a C++ macro. The rover must be set at a lower pulse width to be able to move through the grass, but must be set to higher pulse width in order to achieve the same velocity on pavement. A pulse width of between 1050 and 1080 work well in the grass, and 1120 works well on level pavement. Pulse widths in between will achieve different speeds as well. A pulse width of 1140 will stop the rover completely.
