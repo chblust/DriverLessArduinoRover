@@ -1,3 +1,7 @@
+#  Copyright © 2017 Chris Blust. All rights reserved.
+#  IntelHacks 2017 Judges granted any rights desired for judging
+
+
 from gps3 import gps3
 from bluepy import btle
 import time
