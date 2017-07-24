@@ -1,6 +1,6 @@
 /*
  * Copywrite Chris Blust 2017
- * IntelHacks 2017 Judges granted any rights required for judging
+ * IntelHacks 2017 Judges granted any rights desired for judging
  */
 #include<CurieBLE.h>
 #include<GPS.h>
