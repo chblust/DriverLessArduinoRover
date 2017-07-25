@@ -4,6 +4,7 @@
 //
 //  Created by Chris Blust on 7/5/17.
 //  Copyright © 2017 Chris Blust. All rights reserved.
+//  IntelHacks 2017 Judges granted any rights desired for judging
 //
 #include "Arduino.h"
 #include <SoftwareSerial.h>
