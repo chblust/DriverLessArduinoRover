@@ -9,6 +9,7 @@
 
 #ifndef GPS_h
 #define GPS_h
+//the following constants are taken from the Adafruit GPS library and are not copywritten under Chris Blust
 // different commands to set the update rate from once a second (1 Hz) to 10 times a second (10Hz)
 // Note that these only control the rate at which the position is echoed, to actually speed up the
 // position fix you must also send one of the position fix rate commands below too.
